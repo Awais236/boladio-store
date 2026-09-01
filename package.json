@@ -1,0 +1,26 @@
+{
+  "name": "nadias-fashion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nadia's Fashion - premium Pakistani women's fashion e-commerce store with real-time Cash on Delivery ordering",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm run dev:server\" \"npm run dev:web\"",
+    "dev:server": "npm --workspace server run dev",
+    "dev:web": "npm --workspace web run dev",
+    "build": "npm --workspace web run build",
+    "start": "npm --workspace server run start",
+    "setup": "npm run init:db && npm run seed",
+    "init:db": "npm --workspace server run init:db",
+    "seed": "npm --workspace server run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
