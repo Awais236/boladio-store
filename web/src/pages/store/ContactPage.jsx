@@ -1,31 +1,9 @@
-import { useState } from 'react';
 import { useData } from '../../context/DataContext';
-import { useToast } from '../../context/ToastContext';
-import { api } from '../../lib/api';
 import { Ic } from '../../lib/icons';
 import { WHATSAPP } from '../../lib/format';
 
 export default function ContactPage() {
   const { meta } = useData();
-  const toast = useToast();
-  const [form, setForm] = useState({ name: '', phone: '', message: '' });
-  const [sending, setSending] = useState(false);
-  const [error, setError] = useState('');
-
-  const submit = async (e) => {
-    e.preventDefault();
-    setError('');
-    setSending(true);
-    try {
-      await api('/contact', { method: 'POST', body: form });
-      toast.success('Message sent — we will get back to you shortly.');
-      setForm({ name: '', phone: '', message: '' });
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setSending(false);
-    }
-  };
 
   const wa = WHATSAPP('Hello Boliolo! I have a question.', meta.whatsapp);
 
@@ -66,34 +44,6 @@ export default function ContactPage() {
               Chat on WhatsApp
             </a>
           </div>
-        </div>
-
-        <div className="split" style={{ gap: 30 }}>
-          <div>
-            <div className="eyebrow">Send a Message</div>
-            <h2 style={{ fontSize: 'clamp(24px,3vw,32px)', margin: '10px 0 8px' }}>We usually reply within an hour</h2>
-            <p className="dim">Order inquiries, size help, custom orders and more.</p>
-          </div>
-          <form onSubmit={submit} className="checkout-card" style={{ margin: 0 }}>
-            {error && <div className="form-error">{error}</div>}
-            <div className="form-row">
-              <div className="field">
-                <label>Your Name</label>
-                <input className="input" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
-              </div>
-              <div className="field">
-                <label>Mobile</label>
-                <input className="input" required value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} placeholder="03xx xxxxxxx" />
-              </div>
-            </div>
-            <div className="field">
-              <label>Message</label>
-              <textarea className="textarea" required value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} />
-            </div>
-            <button className="btn btn-dark btn-block" disabled={sending}>
-              {sending ? 'Sending…' : 'Send Message'}
-            </button>
-          </form>
         </div>
       </div>
     </>
