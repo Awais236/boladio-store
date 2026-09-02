@@ -38,5 +38,5 @@ export function statusLabel(key) {
   return s ? s.label : key;
 }
 
-export const WHATSAPP = (msg) =>
-  `https://wa.me/9201234567890?text=${encodeURIComponent(msg || '')}`;
+export const WHATSAPP = (msg, phone) =>
+  `https://wa.me/${phone || ''}?text=${encodeURIComponent(msg || '')}`;

@@ -176,7 +176,7 @@ export default function ProductPage() {
     );
   }
 
-  const waMsg = WHATSAPP(`Hello! I'm interested in "${p.name}" (${formatPKR(p.salePrice || p.price)}). Is it available?`);
+  const waMsg = WHATSAPP(`Hello! I'm interested in "${p.name}" (${formatPKR(p.salePrice || p.price)}). Is it available?`, meta.whatsapp);
 
   return (
     <>

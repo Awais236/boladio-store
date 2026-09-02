@@ -27,7 +27,7 @@ export default function ContactPage() {
     }
   };
 
-  const wa = WHATSAPP('Hello Boliolo! I have a question.');
+  const wa = WHATSAPP('Hello Boliolo! I have a question.', meta.whatsapp);
 
   return (
     <>
