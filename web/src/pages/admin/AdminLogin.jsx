@@ -53,7 +53,6 @@ export default function AdminLogin() {
             {busy ? 'Signing in…' : 'Admin Sign In'}
           </button>
         </form>
-        <p className="dim small center mt-16">Default credentials · phone <code>0123456789</code> · password <code>admin123</code></p>
       </div>
     </div>
   );
