@@ -17,7 +17,7 @@ export default function AboutPage() {
       <div className="page-head">
         <div className="crumbs"><Link to="/">Home</Link> / About</div>
         <h1>About Boliolo</h1>
-        <p>Boutique · Block 3, Street 5 · Islamabad</p>
+        <p>Boutique · Block ABC, Street ABC · Islamabad</p>
       </div>
 
       <div className="container">
@@ -68,9 +68,9 @@ export default function AboutPage() {
         <section className="section" style={{ background: 'var(--paper-2)', borderRadius: 20, padding: '50px 30px' }}>
           <div className="center">
             <div className="eyebrow">Visit Us</div>
-            <h2 style={{ margin: '12px 0 8px' }}>Block 3, Street 5, Islamabad</h2>
+            <h2 style={{ margin: '12px 0 8px' }}>Block ABC, Street ABC, Islamabad</h2>
             <p className="dim">
-              Walk-ins welcome · Block 3, Street 5, Islamabad, Pakistan · {`0123456789`}
+              Walk-ins welcome · Block ABC, Street ABC, House Number 123, Islamabad · {`0123456789`}
             </p>
             <div className="row mt-24" style={{ justifyContent: 'center' }}>
               <Link to="/contact" className="btn btn-dark">Get in Touch</Link>

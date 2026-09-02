@@ -43,7 +43,7 @@ export default function Footer() {
             <ul className="footer-contact">
               <li>
                 <Ic.Pin />
-                <span>7 College Rd, F-7 Markaz<br />Islamabad, Pakistan</span>
+                <span>Block ABC, Street ABC<br />House Number 123, Islamabad</span>
               </li>
               <li>
                 <Ic.Phone />
@@ -57,7 +57,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-bottom">
           <span>&copy; {new Date().getFullYear()} Boliolo. All Rights Reserved.</span>
-          <span>Boutique · Block 3, Street 5 · Islamabad · Cash on Delivery</span>
+          <span>Boutique · Block ABC, Street ABC · Islamabad · Cash on Delivery</span>
         </div>
       </div>
     </footer>

@@ -89,7 +89,7 @@ export default function AdminSettings() {
       <div className="checkout-card mt-24" style={{ background: 'rgba(46,125,91,0.05)' }}>
         <h3 style={{ fontSize: 17 }}><Ic.Info width={16} height={16} /> Store details</h3>
         <p className="dim small mt-8">
-          Boliolo · 7 College Rd, F-7 Markaz, Islamabad, Pakistan<br />
+          Boliolo · Block ABC, Street ABC, House Number 123, Islamabad<br />
           Phone 0123456789 · WhatsApp 0123456789
         </p>
         <button className="btn btn-ghost btn-sm mt-16" onClick={() => navigate('/')}>↗ View live storefront</button>

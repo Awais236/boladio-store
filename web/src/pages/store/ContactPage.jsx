@@ -48,10 +48,10 @@ export default function ContactPage() {
           <div className="contact-card">
             <div className="ic"><Ic.Pin /></div>
             <h4>Visit the Boutique</h4>
-            <p>Block 3, Street 5<br />Islamabad, Pakistan</p>
+            <p>Block ABC, Street ABC<br />House Number 123, Islamabad</p>
             <a
               className="btn btn-outline btn-sm"
-              href="https://www.google.com/maps/search/?api=1&query=Block+3+Street+5+Islamabad"
+              href="https://www.google.com/maps/search/?api=1&query=Block+ABC+Street+ABC+House+Number+123+Islamabad"
               target="_blank"
               rel="noreferrer"
             >

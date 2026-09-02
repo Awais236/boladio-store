@@ -9,7 +9,7 @@ const defaults = {
   deliveryFee: 250,
   phone: '0123456789',
   whatsapp: '9201234567890',
-  address: '7 College Rd, F-7 Markaz, Islamabad, Pakistan',
+  address: 'Block ABC, Street ABC, House Number 123, Islamabad',
   storeName: "Boliolo",
 };
 

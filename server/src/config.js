@@ -18,7 +18,7 @@ module.exports = {
     name: process.env.STORE_NAME || 'Boliolo',
     phone: process.env.STORE_PHONE || '0123456789',
     whatsapp: process.env.WHATSAPP_NUMBER || '9201234567890',
-    address: process.env.STORE_ADDRESS || 'Block 3, Street 5, Islamabad, Pakistan',
+    address: process.env.STORE_ADDRESS || 'Block ABC, Street ABC, House Number 123, Islamabad',
   },
   uploadsDir: require('path').join(__dirname, '..', 'uploads'),
   webDist: require('path').join(__dirname, '..', '..', 'web', 'dist'),
