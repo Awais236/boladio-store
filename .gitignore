@@ -1,5 +1,7 @@
 node_modules/
 .env
+.env.*
+!.env.example
 server/uploads/
 web/dist/
 .vercel/
@@ -7,3 +9,6 @@ web/dist/
 *.log
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+.claude/
