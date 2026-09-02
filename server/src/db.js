@@ -5,6 +5,7 @@ const pool = new Pool({
   connectionString: config.databaseUrl,
   max: 10,
   idleTimeoutMillis: 30000,
+  ssl: config.env === 'production' ? { rejectUnauthorized: false } : false,
 });
 
 pool.on('error', (err) => {

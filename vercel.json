@@ -1,7 +1,7 @@
 {
   "version": 2,
   "outputDirectory": "web/dist",
-  "installCommand": "npm install",
+  "installCommand": "npm install --include=dev",
   "buildCommand": "npm --workspace web run build",
   "functions": {
     "api/index.js": {
