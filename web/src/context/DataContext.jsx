@@ -8,7 +8,7 @@ const defaults = {
   announcement: null,
   deliveryFee: 250,
   phone: '0123456789',
-  whatsapp: '9201234567890',
+  whatsapp: '0123456789',
   address: 'Block ABC, Street ABC, House Number 123, Islamabad',
   storeName: "Boliolo",
 };
