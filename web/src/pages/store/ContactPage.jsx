@@ -43,7 +43,7 @@ export default function ContactPage() {
             <div className="ic"><Ic.Phone /></div>
             <h4>Call Now</h4>
             <p>{meta.phone}</p>
-            <a href="tel:0123456789" className="btn btn-dark btn-sm">Call Now</a>
+            <a href={`tel:${meta.phone}`} className="btn btn-dark btn-sm">Call Now</a>
           </div>
           <div className="contact-card">
             <div className="ic"><Ic.Pin /></div>
