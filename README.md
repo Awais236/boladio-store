@@ -1,4 +1,4 @@
-# Nadia's Fashion — E-Commerce Store + Admin Dashboard
+# Bolilio — E-Commerce Store
 
 A premium, mobile-first, **real-time** e-commerce website for **Nadia's Fashion**, a Pakistani women's fashion boutique in F-7 Markaz, Islamabad.
 
